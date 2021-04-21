@@ -454,7 +454,7 @@ class Main(QMainWindow):
 
 
 date = datetime.now().day
-if date == 21 or date == 23:
+if date == 22 or date == 23:
     if __name__ == "__main__":
         app = QApplication(argv)
         main = Main()
