@@ -1,5 +1,4 @@
 from datetime import datetime
-from os import error
 from sys import argv, exit
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
@@ -151,8 +150,7 @@ class Main(QMainWindow):
                     self.table1.setItem(j, 8, QTableWidgetItem("düşük"))
                 else:
                     self.table1.setItem(j, 8, QTableWidgetItem("eşittir"))
-        except error:
-            print(error)
+        except:
             self.loading.setText("hata var")
 
     def search_word(self, value):
