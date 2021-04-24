@@ -451,12 +451,8 @@ class Main(QMainWindow):
                 kelime += f":{sonuc[i+1]}\n"
             i += 2
         self.table3.setItem(y, x, QTableWidgetItem(f"{kelime}"))
-
-
-date = datetime.now().day
-if date == 22 or date == 23:
-    if __name__ == "__main__":
-        app = QApplication(argv)
-        main = Main()
-        main.show()
-        exit(app.exec_())
+if __name__ == "__main__":
+    app = QApplication(argv)
+    main = Main()
+    main.show()
+    exit(app.exec_())
