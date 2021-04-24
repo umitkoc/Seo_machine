@@ -1,4 +1,3 @@
-from datetime import datetime
 from sys import argv, exit
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
